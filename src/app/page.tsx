@@ -65,17 +65,17 @@ export default function Home() {
             </div>
             <div className="glass-effect rounded-2xl p-4 text-white">
               <div className="text-2xl mb-2">🙋‍♂️</div>
-              <p className="text-sm font-semibold">Me (12)</p>
+              <p className="text-sm font-semibold">Aiden (12)</p>
               <p className="text-xs opacity-80">Leading</p>
             </div>
             <div className="glass-effect rounded-2xl p-4 text-white">
               <div className="text-2xl mb-2">👧</div>
-              <p className="text-sm font-semibold">Sister (10)</p>
+              <p className="text-sm font-semibold">Emery (10)</p>
               <p className="text-xs opacity-80">Excited</p>
             </div>
             <div className="glass-effect rounded-2xl p-4 text-white">
               <div className="text-2xl mb-2">👧</div>
-              <p className="text-sm font-semibold">Sister (10)</p>
+              <p className="text-sm font-semibold">Clara (10)</p>
               <p className="text-xs opacity-80">Ready</p>
             </div>
           </div>
