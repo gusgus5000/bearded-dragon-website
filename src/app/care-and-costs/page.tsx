@@ -66,15 +66,15 @@ export default function CareAndCosts() {
   }
   
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-b from-emerald-50 via-white to-teal-50">
       {/* Hero Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-green-400 to-blue-400">
-        <div className="max-w-6xl mx-auto text-center text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Complete Care Guide & Budget
+      <section className="pt-32 pb-20 px-4">
+        <div className="max-w-6xl mx-auto text-center">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text animate-fade-in">
+            Care Guide & Budget Plan
           </h1>
-          <p className="text-xl md:text-2xl">
-            We've done all the research - here's exactly what we need!
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            Our comprehensive research on costs and care requirements
           </p>
         </div>
       </section>
@@ -82,26 +82,32 @@ export default function CareAndCosts() {
       {/* Budget Overview Cards */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-white rounded-2xl shadow-xl p-8 text-center">
-              <div className="text-4xl mb-4">💰</div>
-              <h3 className="text-2xl font-bold text-green-600 mb-2">Total Setup Cost</h3>
-              <p className="text-4xl font-bold text-gray-800">${totalSetupCost}</p>
-              <p className="text-gray-600 mt-2">Everything included</p>
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-white rounded-3xl shadow-xl p-8 text-center card-hover border border-green-100">
+              <div className="w-20 h-20 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <span className="text-3xl text-white">💰</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Total Setup Cost</h3>
+              <p className="text-4xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">${totalSetupCost}</p>
+              <p className="text-gray-600 mt-2">Complete setup</p>
             </div>
             
-            <div className="bg-white rounded-2xl shadow-xl p-8 text-center">
-              <div className="text-4xl mb-4">⭐</div>
-              <h3 className="text-2xl font-bold text-blue-600 mb-2">Essential Items Only</h3>
-              <p className="text-4xl font-bold text-gray-800">${essentialCost}</p>
-              <p className="text-gray-600 mt-2">Bare minimum needed</p>
+            <div className="bg-white rounded-3xl shadow-xl p-8 text-center card-hover border border-blue-100">
+              <div className="w-20 h-20 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <span className="text-3xl text-white">⭐</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Essential Items</h3>
+              <p className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">${essentialCost}</p>
+              <p className="text-gray-600 mt-2">Minimum needed</p>
             </div>
             
-            <div className="bg-white rounded-2xl shadow-xl p-8 text-center">
-              <div className="text-4xl mb-4">📅</div>
-              <h3 className="text-2xl font-bold text-purple-600 mb-2">Monthly Cost</h3>
-              <p className="text-4xl font-bold text-gray-800">$35-55</p>
-              <p className="text-gray-600 mt-2">Food & electricity</p>
+            <div className="bg-white rounded-3xl shadow-xl p-8 text-center card-hover border border-purple-100">
+              <div className="w-20 h-20 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <span className="text-3xl text-white">📅</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Monthly Cost</h3>
+              <p className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">$35-55</p>
+              <p className="text-gray-600 mt-2">Ongoing expenses</p>
             </div>
           </div>
         </div>

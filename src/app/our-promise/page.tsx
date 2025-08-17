@@ -94,15 +94,15 @@ export default function OurPromise() {
   ]
   
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-pink-50">
+    <div className="min-h-screen bg-gradient-to-b from-indigo-50 via-white to-purple-50">
       {/* Hero Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-purple-400 to-pink-400">
-        <div className="max-w-6xl mx-auto text-center text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Our Promise to You, Mom
+      <section className="pt-32 pb-20 px-4">
+        <div className="max-w-6xl mx-auto text-center">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text animate-fade-in">
+            Our Promise to You
           </h1>
-          <p className="text-xl md:text-2xl">
-            This is our commitment to being responsible pet owners
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            Our commitment to being responsible pet owners
           </p>
         </div>
       </section>
@@ -116,10 +116,12 @@ export default function OurPromise() {
           
           <div className="grid md:grid-cols-2 gap-8">
             {promises.map((promise, index) => (
-              <div key={index} className="bg-white rounded-2xl shadow-xl p-8">
+              <div key={index} className="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all border border-purple-100">
                 <div className="flex items-center mb-6">
-                  <span className="text-5xl mr-4">{promise.icon}</span>
-                  <h3 className="text-2xl font-bold text-purple-600">{promise.person}</h3>
+                  <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-indigo-500 rounded-2xl flex items-center justify-center mr-4">
+                    <span className="text-3xl text-white">{promise.icon}</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800">{promise.person}</h3>
                 </div>
                 
                 <ul className="space-y-3">
